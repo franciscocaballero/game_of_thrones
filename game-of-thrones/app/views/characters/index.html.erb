@@ -1,0 +1,11 @@
+<h1>WINTER IS COMING</h1>
+<h2>Characters</h2>
+<%= link_to 'New Character(+)', new_house_character_path %>
+<ul>
+  <% @characters.each do |character| %>
+  <li>
+    <%= link_to character.name, [@character.house, @character] %>
+  </li>
+  <% end %>
+</ul>
+Contact GitHub API Training Shop Blog About
